@@ -1,0 +1,183 @@
+* {
+  transition: 0.5s;
+}
+
+/*tbody tr:nth-child(odd) {
+background-color: #f3e6ff;
+}
+*/
+/* 1st Table CSS*/
+.tableheader1 {
+  padding: 20px;
+  border: 1px solid #9c53e0;
+  font-size: 20px;
+  color: #9c53e0;
+}
+
+.table1 {
+  background-color: #c7f9ea;
+}
+
+.trchild1 {
+  background-color: #e4fff7;
+}
+
+/* 2nd Table CSS*/
+.tableheader2 {
+  padding: 20px;
+  border: 1px solid #d6eaff;
+  font-size: 20px;
+  color: #88c2ff;
+}
+
+.table2 {
+  background-color: #ffe7d9;
+}
+
+.trchild2 {
+  background-color: #fff6f1;
+}
+
+/* 3rd Table CSS*/
+.tableheader3 {
+  padding: 20px;
+  border: 1px solid #f7e9d7;
+  font-size: 20px;
+  color: #fbcc90;
+}
+
+.table3 {
+  background-color: #f9d493;
+}
+
+.trchild3 {
+  background-color: #fcefd9;
+}
+
+.quote-box3 {
+  overflow: hidden;
+  padding-top: -25px;
+  border-radius: 17px;
+  background-color: #eeac39
+
+;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
+}
+
+/* 4th Table CSS*/
+
+.table4 {
+  background-color: #b5e8b7;
+}
+
+.trchild4 {
+  background-color: #daf3db;
+}
+
+.quote-box4 {
+  overflow: hidden;
+  padding-top: -25px;
+  border-radius: 17px;
+  background-color: #6da06f
+
+
+;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
+}
+
+/* 5th Table CSS*/
+/*.tableheader5 {
+  padding: 20px;
+  border: 1px solid #ccffcc;
+  font-size: 20px;
+  color: #2eed2e;
+}
+
+.table5 {
+  background-color: #ccffcc;
+}
+
+.trchild5 {
+  background-color: #e6ffe6;
+}
+
+ 6th Table CSS
+.tableheader6 {
+  padding: 20px;
+  border: 1px solid #ccffcc;
+  font-size: 20px;
+  color: #2eed2e;
+}
+
+.table6 {
+  background-color: #ccffcc;
+}
+
+.trchild6 {
+  background-color: #e6ffe6;
+}*/
+
+.section_our_solution .row {
+  align-items: center;
+}
+
+.blockquote {
+  border-left: none;
+}
+
+.quote-badge {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.quote-box {
+  overflow: hidden;
+  padding-top: -25px;
+  border-radius: 17px;
+  background-color: #3dd9ac;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
+}
+
+.quote-text {
+  font-size: 15px;
+  margin-top: -50px;
+}
+
+.quote-box2 {
+  overflow: hidden;
+  padding-top: -25px;
+  border-radius: 17px;
+  background-color: #cf8a63;
+  color: white;
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
+}
+
+.quote-text2 {
+  font-size: 15px;
+  margin-top: -50px;
+}
+
+.quotation-mark {
+  margin-bottom: 60px;
+  font-weight: lighter;
+  font-size: 21px;
+  color: white;
+  /*
+*/
+}
+
+
+.fade:not(.show) {
+  opacity: 10 !important;
+}
+
+.popover-title {
+  color: black;
+}
+.popover-content {
+  color: green;
+  /*font-size: 10px;*/
+}
