@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/login.css">
+
+    <style>
+       .form-control1{
+        display: block;
+    width: 100%;
+  
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+       }
+    </style>
+
 </head>
 
 <body>
@@ -31,19 +50,23 @@
                             </div>
                             <div class="form-group">
                                 <label for="drop-down">Profession:</label>
-                                <select name="drop-down" id="drop-down" class="form-control">
+                                <select name="drop-down" id="drop-down" class="form-control1" onchange='checkvalue(this.value)'>
+                                    <option disabled selected value="">Select Profession</option>
   <option value="one">Student</option>
   <option value="two">Teacher</option>
   <option value="three">Faculty</option>
+  <option value="four">Industry Professional</option>
+  <option value="five">Researcher</option>
+  <option value="six">Other</option>
 </select>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="drop-down">Industry:</label>
                                 <select id="drop-down" class="form-control" onchange='checkvalue(this.value)'>
   <option value="one">Researcher</option>
   <option value="two">Other</option>
 </select>
-                            </div>
+                            </div> -->
                             <div class="form-group" id="other" style='display:none'>
                                 <label for="text" class="sr-only">Other:</label>
                                 <input type="text" name="other" class="form-control" placeholder="Other Industry">
@@ -55,11 +78,11 @@
 
 
                             <div class="d-flex justify-content-between align-items-center mb-5">
-                              <a href="dimensions/dimension-one.html">
+                              <a href="dimensions/homepage.html">
                                 <input name="signup" id="signup" class="btn login-btn" type="button" value="Sign-up"></a>
-                                 <a href="dimensions/dimension-one.html">
+                                 <!-- <a href="dimensions/homepage.html">
                                 <input name="login" id="login" class="btn login-btn" type="button" value="Get Started >">
-                            </a>    
+                            </a>     -->
                                                     
                             </div>
 
@@ -88,7 +111,7 @@
                         <div class="logo-area">
                         <center><a href="#"><img src="assets/images/logo.png" class="logo" alt="" /></a></center>
                     </div>
-                        <a href="dimensions/infographic.html" class="btn btn-read-more">Read more</a>
+                        <a href="dimensions/homepage.html" class="btn btn-read-more">Read more</a>
                     </div>
                     <!-- <div class="intro-section-footer">
                         <na class="footer-nav">
@@ -106,7 +129,7 @@
         function checkvalue(val)
 {
     console.log(val);
-    if(val=="two")
+    if(val=="six")
        document.getElementById('other').style.display='block';
     else
        document.getElementById('other').style.display='none'; 
