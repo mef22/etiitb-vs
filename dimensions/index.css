@@ -7,6 +7,11 @@ background-color: #f3e6ff;
 }
 */
 /* 1st Table CSS*/
+
+.navbar {
+  margin-bottom: 0px;
+}
+
 .tableheader1 {
   padding: 20px;
   border: 1px solid #9c53e0;

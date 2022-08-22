@@ -75,7 +75,7 @@
 <body>
     
     <!-- Start Header Top Area -->
-    <div class="header-top-area">
+   <!--  <div class="header-top-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -85,7 +85,48 @@
                 </div>      
             </div>
         </div>
-    </div>
+    </div> -->
+
+<div id="dimension-nav">   
+    <nav class="navbar navbar-expand-lg navbar-light header-top-area" style="height: 120px;">
+        <div class="container-fluid">
+            <a href="#"> <!-- class="navbar-brand"
+ -->                <img src="img/logo/logo.png" class="logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <!--   <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" >
+              
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto"> 
+                    <a href="homepage.html" class="nav-item nav-link active">Home</a>
+                    <a href="summary.html" class="nav-item nav-link active">Summary</a>
+                    <a href="faq.html" class="nav-item nav-link active">FAQ</a>
+                    <a href="contact-us.html" class="nav-item nav-link active" tabindex="-1">Contact Us</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Welcome, User
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="../login.html">Logout</a>
+    <a class="dropdown-item" href="#">Settings</a>
+  </div>
+</div>
+                </div>
+            </div>
+</nav>
+</div>
     <!-- End Header Top Area -->
     
     <!-- Main Menu area start-->
@@ -121,11 +162,11 @@
 <div class="container">
     <blockquote class="quote-box2">
       <p class="quotation-mark">
-        Pedagogy aspects of Dimension-1 (Course Structure & Expectations)
+        Course Structure & Expectations
       </p>
 
       <p class="quote-text">
-         It evaluates the clarity provided to learners regarding the structure of the course and initial-scale
+         This dimension evaluates the clarity provided to learners regarding the structure of the course and initial-scale
 goals, target audience, prerequisites for the course, expected interactions with peers
 and course team, navigation of course components and grading policy.
       </p>
@@ -147,6 +188,16 @@ and course team, navigation of course components and grading policy.
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="normal-table-list">
+              <div class="float-right">
+              <button onclick="" style="background-color: #ffe7d9; border-color: #ffe7d9;" ><i class="fa fa-refresh" aria-hidden="true"></i>
+</button>
+            </div>
+              <div class="float-left">
+                <button style="background-color: #ffe7d9; border-color: #ffe7d9;" > <a href="how-to-rate.html" style="color: black;"><i class="fa fa-check-square-o" aria-hidden="true"></i>
+</a></button>
+              </div>
+
+
               <!-- <div class="basic-tb-hd">
                             <center><h2 class="tableheader1">Course framework and Content</h2></center>
                         </div> -->
@@ -163,7 +214,7 @@ and course team, navigation of course components and grading policy.
                   </thead>
                   <thead>
                     <tr>
-                      <th><strong>Dimension 1:<br>Course Structure and Expectations</strong></th>
+                      <th><strong>Dimension 1:<br>Course structure and expectations</strong></th>
                       <th>Indicators for evaluation</th>
                       <th>M(0)</th>
                       <th>I(1)</th>
@@ -1065,10 +1116,10 @@ and course team, navigation of course components and grading policy.
                     </tr>
 
                     <tr class="table2">
-                      <td><strong>Feedback:</strong></td>
+                      <td><strong>Feedback:</strong><br>(please ensure to fill-in all indicators)</td>
                       <td colspan="5" id="feedbackXt1"></td>
                       <td>
-                        <strong>Avg. Score Dimension 1</strong>
+                        <strong>Avg. Score D1</strong>
                       </td>
                       <td id="critavg"></td>
                     </tr>
@@ -1081,8 +1132,15 @@ and course team, navigation of course components and grading policy.
       </div>
     </div>
 
+   <div class="container">    
+  <ul class="pager">
+    <!-- <li class="previous"><a href="#">Previous</a></li> -->
+    <li class="next" ><a href="dimension-two.html" style="background-color: #ffe7d9 !important; color: black;">Next</a></li>
+  </ul>
+</div>
+
     <!-- Start Footer area-->
-    <div class="footer-copyright-area">
+   <!--  <div class="footer-copyright-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1092,8 +1150,18 @@ and course team, navigation of course components and grading policy.
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Footer area-->
+
+    <section class="section footer footer-copyright-area"><br><div class="container-fluid"><div class="row justify-content-center"><div class="col-xl-2 col-lg-2 col-md-3 col-sm-2 col-xs-4 col-3"><a href="http://www.et.iitb.ac.in/" target="_blank" rel="noopener noreferrer external"><img src="et-logo.png" alt="Interdisciplinary Programme in Education Technology." class="img-fluid" style="max-height: 120px;" ></a></div> <div class="col-xl-3 col-lg-4 col-md-7 col-sm-6 col-xs-8 mb-5 mb-md-0"><div class="d-flex h-100 justify-content-sm-end justify-content-center align-items-center"><div class="contact-us text-sm-left text-justify mt-sm-0 mt-4"><div class="text-left">Contact us</div> <div class="text-light">
+                IDP
+                <br>in Education Technology.
+              </div> <div class="text-light">
+                Indian Institute of Technology, Bombay.
+              </div></div></div></div></div> < <div class="text-center copyright"><div class="mx-auto">
+          Copyright © 2022 ET-IIT Bombay.
+          All Rights Reserved.
+        </div></div></div></section>
 
 
 

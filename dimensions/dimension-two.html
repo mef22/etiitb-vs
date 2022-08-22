@@ -75,17 +75,46 @@
 <body>
     
     <!-- Start Header Top Area -->
-    <div class="header-top-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="logo-area">
-                        <a href="#"><img src="img/logo/logo.png" class="logo" alt="" /></a>
-                    </div>
-                </div>      
+    <div id="dimension-nav">   
+    <nav class="navbar navbar-expand-lg navbar-light header-top-area" style="height: 120px;">
+        <div class="container-fluid">
+            <a href="#"> <!-- class="navbar-brand"
+ -->                <img src="img/logo/logo.png" class="logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <!--   <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" >
+              
             </div>
         </div>
-    </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto"> 
+                    <a href="homepage.html" class="nav-item nav-link active">Home</a>
+                    <a href="summary.html" class="nav-item nav-link active">Summary</a>
+                    <a href="faq.html" class="nav-item nav-link active">FAQ</a>
+                    <a href="contact-us.html" class="nav-item nav-link active" tabindex="-1">Contact Us</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Welcome, User
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="../login.html">Logout</a>
+    <a class="dropdown-item" href="#">Settings</a>
+  </div>
+</div>
+                </div>
+            </div>
+</nav>
+</div>
     <!-- End Header Top Area -->
     
     <!-- Main Menu area start-->
@@ -847,6 +876,13 @@
         </div>
       </div>
     </div>
+
+     <div class="container">    
+  <ul class="pager">
+    <li class="previous"><a href="dimension-one.html" style="background-color: #c7f9ea !important; color: black;">Previous</a></li>
+    <li class="next" ><a href="dimension-three.html" style="background-color: #c7f9ea !important; color: black;">Next</a></li>
+  </ul>
+</div>
 
     <!-- Start Footer area-->
     <div class="footer-copyright-area">

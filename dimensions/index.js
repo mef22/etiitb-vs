@@ -12,6 +12,7 @@ function criterionScoreCalc(allInputs, resultId) {
 
   allInputs.forEach((id) => {
     const el = document.getElementById(id);
+    //console.log(el);
 
     if (el) {
       total += parseInt(el.innerText, 10) || 0;
@@ -27,6 +28,7 @@ function criterionScoreCalc(allInputs, resultId) {
 
 function criterionScore1() {
   criterionScoreCalc(["indi-1", "indi-2", "indi-3"], "crit-1");
+
 }
 
 function criterionScore2() {
@@ -58,6 +60,7 @@ function criteriaAverage() {
 
   allCriteria.forEach((id) => {
     const critEl = document.getElementById(id);
+    //console.log(critEl);
 
     if (critEl) {
       total += parseInt(critEl.innerText, 10) || 0;
@@ -70,7 +73,7 @@ function criteriaAverage() {
 
   //console.log(total / allCriteria.length);
   const feedbackAvg = total / allCriteria.length;
-  console.log(feedbackAvg);
+  //console.log(feedbackAvg);
 
   if(feedbackAvg <= 0.9){
      document.getElementById("feedbackXt1").innerHTML = "Missing or Minimal: You have either missed the attempt to incorporate the learner-centric approach in the design of this dimension, or it is at a minimal level. You should reflect back on the pedagogy design for this dimension by going through individual indicators for different criteria.";
@@ -92,4 +95,24 @@ function handleInputClick(value, scoreId, critId) {
   const critFunction = critMap[critId];
 
   if (critFunction) critFunction();
+}
+
+function refreshRadioButtons(){
+
+  // const allRadios = ["indi-1", "indi-2", "indi-3", "indi-21", "indi-22", "indi-31", "indi-32", "indi-33", "indi-41", "indi-42", "indi-43","indi-51", "indi-52", "indi-53", "indi-61", "indi-62", "indi-63"];
+  // allRadios.forEach((id) => {
+  // const rd = document.getElementById(id);
+  // console.log(id + "" + rd);
+
+  // document.getElementById('d1i11q1').checked = false;
+   $("input[type=radio]:checked").each(function(){
+        $(this).attr('checked',false);
+    });
+
+  // $('input[name=Choose]').attr('checked',false);
+
+}
+
+function allButtonsFeedback(){
+  
 }
