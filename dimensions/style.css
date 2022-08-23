@@ -1853,16 +1853,16 @@ ul.wizard-nav-ac li .disabled{
     background:#2196F3
 }
 .panel-group[data-collapse-color=nk-green] .panel-collapse .panel-heading.active .panel-title>a:after{
-    background:#9c53e0
+    background:#ffc79a
 }
 .panel-group[data-collapse-color=nk-red] .panel-collapse .panel-heading.active .panel-title>a:after{
-    background:#F44336
+    background:#87d9bb
 }
 .panel-group[data-collapse-color=nk-pink] .panel-collapse .panel-heading.active .panel-title>a:after{
-    background:#E91E63
+    background:#ffc79a
 }
 .panel-group[data-collapse-color=nk-purple] .panel-collapse .panel-heading.active .panel-title>a:after{
-    background:#9C27B0
+    background:#87d9bb
 }
 .panel-group[data-collapse-color=nk-indigo] .panel-collapse .panel-heading.active .panel-title>a:after{
     background:#3F51B5
