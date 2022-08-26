@@ -3581,7 +3581,9 @@ textarea.auto-size {
 .login-content, .error-page-area{
     min-height:100vh;
     text-align:center;
-    background-color:#9c53e0;
+    /*background-color:#9c53e0;*/
+        background: linear-gradient(to top, #a4dbcb8a, #e9b38b8a);
+
 }
 .login-content:before, .error-page-area:before{
     content:'';
@@ -3849,10 +3851,10 @@ textarea.auto-size {
 	line-height:24px;
 }
 .error-page-wrap .btn{
-	background:#9c53e0;
-	color:#fff;
+	background:#ffae54;
+	color:#000;
 	border-radius:2px;
-	box-shadow: 0 2px 5px rgba(0,0,0,.16), 0 2px 10px rgba(0,0,0,.12);
+	box-shadow: 0 2px 5px rgba(0,0,0,.1), 0 2px 10px rgba(0,0,0,.1);
 	outline:none;
 	margin:0px 5px;
 	font-size:14px;
