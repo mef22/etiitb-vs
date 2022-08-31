@@ -64,7 +64,7 @@
 
 .bg-image {
   background-image: url('img/iitb.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -126,7 +126,7 @@
 <div class="container-fluid px-5 my-5">
   <div class="row justify-content-center">
     <div class="col-xl-10">
-      <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+      <div class="card border-0 rounded-3 overflow-hidden"> <!-- shadow-lg -->
         <div class="card-body p-0">
           <div class="row g-0">
             <div class="col-sm-6 d-none d-sm-block bg-image"></div>
@@ -136,16 +136,6 @@
                 <p class="mb-4 text-muted">Thank you for visiting our website. If you have feedback about your experience, content on this site, or
 to report a broken link please complete this form. We value your feedback and suggestions.</p>
               </div>
-
-              <!-- * * * * * * * * * * * * * *
-          // * * SB Forms Contact Form * *
-          // * * * * * * * * * * * * * * *
-
-          // This form is pre-integrated with SB Forms.
-          // To make this form functional, sign up at
-          // https://startbootstrap.com/solution/contact-forms
-          // to get an API token!
-          -->
 
               <form id="contactForm" data-sb-form-api-token="API_TOKEN">
 

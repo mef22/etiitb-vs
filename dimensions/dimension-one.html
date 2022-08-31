@@ -109,7 +109,7 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto"> 
                     <a href="homepage.html" class="nav-item nav-link" style="margin-right: 30px;">Home</a>
-                    <a href="dimension-one.html" class="nav-item nav-link active" style="margin-right: 30px;">MEF</a>
+                    <a href="dimension-one.html" class="nav-item nav-link active" style="margin-right: 30px;">MEF Toolkit</a>
                     <a href="summary.html" class="nav-item nav-link " style="margin-right: 30px;">Summary</a>
                     <a href="faq.html" class="nav-item nav-link" style="margin-right: 30px;">FAQ</a>
                     <a href="contact-us.html" class="nav-item nav-link" tabindex="-1" style="margin-right: 80px;">Contact Us</a>
@@ -121,7 +121,6 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="../login.html">Logout</a>
-    <a class="dropdown-item" href="#">Settings</a>
   </div>
 </div>
                 </div>
@@ -190,9 +189,10 @@ and course team, navigation of course components and grading policy.
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="normal-table-list">
               <div class="float-left" style="margin-bottom: 5px;">
+                <form name="form1" action="" onsubmit="validateMooc()">
                 <input type="text" name="mooc-name" placeholder="*Enter MOOC Name">
               <button onclick="" style="background-color: #ffe7d9; border-color: #ffe7d9;" >Start</i>
-</button>
+</button></form>
             </div>
               <div class="float-right" style="margin-bottom: 5px;">
               <button onclick="" style="background-color: #ffe7d9; border-color: #ffe7d9;" ><i class="fa fa-refresh" aria-hidden="true"></i>

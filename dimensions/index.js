@@ -7,6 +7,20 @@ const critMap = {
   'crit-6': criterionScore6,
 };
 
+function validateMooc(){
+var empt = document.forms["form1"]["mooc-name"].value;
+if (empt == "")
+{
+alert("Please input a MOOC name");
+return false;
+}
+else 
+{
+alert('Thanks, you can now proceed further');
+return true; 
+}
+}
+
 function criterionScoreCalc(allInputs, resultId) {
   var total = 0;
 
