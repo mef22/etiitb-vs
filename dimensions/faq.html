@@ -6,7 +6,6 @@
     <title>MEF - FAQs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- favicon
 		============================================ -->
@@ -67,6 +66,23 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./index.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  
+#green{
+  color: #000000;
+    background-color: #d0eed9;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+#orange {
+  
+  color: #000000;
+    background-color: #f2d7c2;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+</style>
 
 </head>
 
@@ -117,118 +133,90 @@
     <!-- End Header Top Area -->
 
      <div class="accordion-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="accordion-wn-wp">
-                        <div class="accordion-hd">
-                            <h2>Frequently Asked Questions</h2>
-                            
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="accordion-stn">
-                                    <div class="panel-group" data-collapse-color="nk-green" id="accordionGreen" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordionGreen" href="#accordionGreen-one" aria-expanded="true">
-                                                            What is MEF?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionGreen-one" class="collapse in" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>MEF is MOOC evaluation framework, designed with a strong pedagogical basis
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="accordion-wn-wp">
+          <div class="accordion-hd">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button " id="green" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"> What is MEF? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                     MEF is MOOC evaluation framework, designed with a strong pedagogical basis
 underpinned by theory and MOOC design practices, which evaluates the integration of
-learner-centric pedagogy in MOOCs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionGreen" href="#accordionGreen-two" aria-expanded="false">
-                                                            How MEF is different than the existing MOOC evaluation approaches?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionGreen-two" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>The MOOC evaluation framework distinguishes itself from other MOOC evaluation
+learner-centric pedagogy in MOOCs.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" id="green" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo"> How MEF is different than the existing MOOC evaluation approaches? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                    The MOOC evaluation framework distinguishes itself from other MOOC evaluation
 measures as it primarily focuses on evaluation of learner-centric pedagogy in MOOC
 design. Also, the framework goes beyond a crisp checklist in the form of questions or
 high-level guidelines to evaluate a MOOC, and provides comprehensive indicators for
 MOOC creators or reviewers for pedagogy evaluation. These indicators can also be used
-for formative purposes during the MOOC design phase to improve.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionGreen" href="#accordionGreen-three" aria-expanded="false">
-                                                            Who can use MEF?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionGreen-three" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>MEF has primarily been designed for MOOC creators or MOOC reviewers. However, it
+for formative purposes during the MOOC design phase to improve.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" id="green" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree"> Who can use MEF? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                     MEF has primarily been designed for MOOC creators or MOOC reviewers. However, it
 can also be used by instructional designers, pedagogical facilitators, teaching assistants
-or moderators attempting to design interactive online courses.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="accordion-stn sm-res-mg-t-30">
-                                    <div class="panel-group" data-collapse-color="nk-red" id="accordionRed" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordionRed" href="#accordionRed-one" aria-expanded="true">
-                                                            What are the eligibility requirements for a MEF user?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionRed-one" class="collapse in" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>There are no eligibility criteria for using MEF. It is important to involve the respective
+or moderators attempting to design interactive online courses.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" id="orange" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="true" aria-controls="panelsStayOpen-collapse1"> What are the eligibility criteria for a MEF user? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      There are no eligibility criteria for using MEF. It is important to involve the respective
 teams responsible for undertakings such as developing content and learning activities,
 video creation, assessments, learning resources, discussion forums etc. while evaluating
-the corresponding dimension.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionRed" href="#accordionRed-two" aria-expanded="false">
-                                                            Is there a fee associated with the use of MEF?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionRed-two" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>There is no fee associated with the use of MEF. You are only required to do a free sign
-up during your first visit to MEF, and then you can use it for all your MOOCs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionRed" href="#accordionRed-three" aria-expanded="false">
-                                                            Should MEF be used for formative or summative evaluation of MOOCs?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionRed-three" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>MEF that supports a MOOC evaluation process based on 44 criteria segregated into 8
+the corresponding dimension.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed"  id="orange" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false" aria-controls="panelsStayOpen-collapse2"> Is there a fee associated with the use of MEF? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      There is no fee associated with the use of MEF. You are only required to do a free sign
+up during your first visit to MEF, and then you can use it for all your MOOCs.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed"  id="orange" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3"> Should MEF be used for formative or summative evaluation of MOOCs? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      MEF that supports a MOOC evaluation process based on 44 criteria segregated into 8
 different dimensions. The framework allows evaluation of all pedagogical aspects of the
 MOOC design; however, it can be employed at both formative and summative level.
 Either a collective approach can be followed to evaluate the entire MOOC and examine
@@ -237,129 +225,139 @@ evaluation. Summative evaluation can be performed for an already created MOOC to
 gain insights on the areas of strength and weakness. While performing a formative
 
 evaluation of a MOOC, which is currently under design, it is suggestive to reflect on
-criteria and guiding indicators provided for each dimension.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="accordion-stn mg-t-30">
-                                    <div class="panel-group" data-collapse-color="nk-pink" id="accordionPink" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordionPink" href="#accordionPink-one" aria-expanded="true">
-                                                            What kind of feedback do I get from MEF?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionPink-one" class="collapse in" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>Each indicator in MEF is rated on a four-point scale (missing, inadequate, proficient, or
+criteria and guiding indicators provided for each dimension.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed"  id="orange" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="true" aria-controls="panelsStayOpen-collapse4"> What kind of feedback do I get from MEF? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      Each indicator in MEF is rated on a four-point scale (missing, inadequate, proficient, or
 distinguished) ranging from 0 to 3, demonstrating the level of performance or
 achievement. The users will receive an average score for each dimension. Based on
 these scores, feedback will be received drawn from four score bands as standards for
 measuring the strength of learner-centric design in a particular dimension. These scoring
-bands will help you visualize the interpretation of the obtained score.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionPink" href="#accordionPink-two" aria-expanded="false">
-                                                            Do I need to evaluate my MOOC in all dimensions of MEF to receive feedback?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionPink-two" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>No, it is not necessary to employ all dimensions in order to get feedback. You may
-evaluate selective dimension(s) and feedback on those.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionPink" href="#accordionPink-three" aria-expanded="false">
-                                                            Can MEF be utilized to evaluate other course formats?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionPink-three" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>Though MEF has been designed primarily for xMOOCs, online/hybrid courses with
-similar structure may be evaluated for their pedagogy design using MEF.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="accordion-stn mg-t-30">
-                                    <div class="panel-group" data-collapse-color="nk-purple" id="accordionPurple" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordionPurple" href="#accordionPurple-one" aria-expanded="true">
-                                                            Why should I use MEF?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionPurple-one" class="collapse in" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>The motivation to perform this evaluation exercise should be to design a MOOC of high
-pedagogical quality.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionPurple" href="#accordionPurple-two" aria-expanded="false">
-                                                            Who can I ask for support in case I have queries during the process of using MEF?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionPurple-two" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>You may ask for support to MEF Team.<br> To do so, please fill the form on ‘Contact Us’
-page or email us at mef22etiitb@gmail.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-collapse notika-accrodion-cus">
-                                            <div class="panel-heading" role="tab">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionPurple" href="#accordionPurple-three" aria-expanded="false">
-                                                            What aspects of MOOCs not evaluated through MEF?
-                                                        </a>
-                                                </h4>
-                                            </div>
-                                            <div id="accordionPurple-three" class="collapse" role="tabpanel">
-                                                <div class="panel-body">
-                                                    <p>MEF only focuses on the pedagogy aspect of MOOC. In its design, MEF did not take
-specially-abled learners, digital literacy skills of learners or technological support used
-by instructors into account.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+bands will help you visualize the interpretation of the obtained score.
                     </div>
+                  </div>
                 </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed"  id="orange" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5"> Do I need to evaluate my MOOC in all dimensions of MEF to receive feedback? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      No, it is not necessary to employ all dimensions in order to get feedback. You may
+evaluate selective dimension(s) and feedback on those.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed"  id="orange" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6"> Can MEF be utilized to evaluate other course formats? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      Though MEF has been designed primarily for xMOOCs, online/hybrid courses with
+similar structure may be evaluated for their pedagogy design using MEF.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-        </div><br>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button"  id="green" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7" aria-expanded="true" aria-controls="panelsStayOpen-collapse7"> Why should I use MEF? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                     The motivation to perform this evaluation exercise should be to design a MOOC of high
+pedagogical quality.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" id="green" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8" aria-expanded="false" aria-controls="panelsStayOpen-collapse8"> Who can I ask for support in case I have queries during the process of using MEF? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse8" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      You may ask for support to MEF Team. To do so, please fill the form on ‘Contact Us’
+page or email us at mef22etiitb@gmail.com
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed"  id="green" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse9" aria-expanded="false" aria-controls="panelsStayOpen-collapse9"> What aspects of MOOCs not evaluated through MEF? </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse9" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      MEF only focuses on the pedagogy aspect of MOOC. In its design, MEF did not take
+specially-abled learners, digital literacy skills of learners or technological support used
+by instructors into account.
+                    </div>
+                  </div>
+        </div>
+      </div>
     </div>
+  </div> </div></div></div></div></div> 
+
+      <!-- Start Footer area-->
+    <section class="section footer footer-copyright-area" >
+   <br>
+   <div class="container-fluid">
+      <div class="row justify-content-center" >
+        
+         <div class="col-xl-10 col-lg-4 col-md-7 col-sm-6 col-xs-8 mb-5 mb-md-0" style="background-color: #eeeeee94;">
+            <div class="d-flex h-100 justify-content-sm-end justify-content-center align-items-center">
+               <div class="contact-us text-sm-left text-justify mt-sm-0 mt-4">
+                  <div class="text" style="color: #2b388f;">
+                     IDP in Education Technology, IIT-B
+                  </div>
+                  <div class="text" style="color: #2b388f;">
+                     
+                  </div>
+                  <div class="text" style="color: #2b388f;">
+                     Copyright © 2022 ET-IIT Bombay.
+            All Rights Reserved.
+                  </div>
+               </div>
+            </div>
+         </div>
+          <div class="col-xl-1 col-lg-2 col-md-3 col-sm-2 col-xs-4 col-3"><a href="http://www.et.iitb.ac.in/" target="_blank" rel="noopener noreferrer external"><img src="et-logo.png" alt="Interdisciplinary Programme in Education Technology." class="img-fluid" style="max-height: 120px;" ></a></div>
+      </div>
+      < 
+      <div class="text-center copyright">
+         <div class="mx-auto">
+            
+         </div>
+      </div>
+   </div>
+</section>
+    <!-- End Footer area-->
+
+</body>
+
+
+
+
+
+
+
+
+
 
 
 

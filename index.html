@@ -12,21 +12,21 @@
     <link rel="stylesheet" href="assets/css/login.css">
 
     <style>
-       .form-control1{
-        display: block;
-    width: 100%;
-  
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-       }
+        .form-control1 {
+            display: block;
+            width: 100%;
+
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
     </style>
 
 </head>
@@ -35,7 +35,7 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-               
+
                 <div class="col-sm-6 col-md-6 form-section">
                     <div class="login-wrapper">
                         <h2 class="login-title">Tell us something about yourself</h2>
@@ -50,19 +50,21 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="password" class="sr-only">Password</label>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Create Password">
+                                <input type="password" name="password" id="password" class="form-control"
+                                    placeholder="Create Password">
                             </div>
                             <div class="form-group">
                                 <label for="drop-down">Profession:</label>
-                                <select name="drop-down" id="drop-down" class="form-control1" onchange='checkvalue(this.value)'>
+                                <select name="drop-down" id="drop-down" class="form-control1"
+                                    onchange='checkvalue(this.value)'>
                                     <option disabled selected value="">Select Profession</option>
-  <option value="one">Student</option>
-  <option value="two">Teacher</option>
-  <option value="three">Faculty</option>
-  <option value="four">Industry Professional</option>
-  <option value="five">Researcher</option>
-  <option value="six">Other</option>
-</select>
+                                    <option value="one">Student</option>
+                                    <option value="two">Teacher</option>
+                                    <option value="three">Faculty</option>
+                                    <option value="four">Industry Professional</option>
+                                    <option value="five">Researcher</option>
+                                    <option value="six">Other</option>
+                                </select>
                             </div>
                             <!-- <div class="form-group">
                                 <label for="drop-down">Industry:</label>
@@ -77,17 +79,19 @@
                             </div>
                             <div class="form-group">
                                 <label for="text" class="sr-only">Affiliated Organization</label>
-                                <input type="text" name="affo" id="affo" class="form-control" placeholder="Affiliated Organization">
+                                <input type="text" name="affo" id="affo" class="form-control"
+                                    placeholder="Affiliated Organization">
                             </div>
 
 
                             <div class="d-flex justify-content-between align-items-center mb-5">
-                              <a href="dimensions/homepage.html">
-                                <input name="signup" id="signup" class="btn login-btn" type="button" value="Sign-up"></a>
-                                 <!-- <a href="dimensions/homepage.html">
+                                <a href="dimensions/homepage.html">
+                                    <input name="signup" id="signup" class="btn login-btn" type="button"
+                                        value="Sign-up"></a>
+                                <!-- <a href="dimensions/homepage.html">
                                 <input name="login" id="login" class="btn login-btn" type="button" value="Get Started >">
                             </a>     -->
-                                                    
+
                             </div>
 
                         </form>
@@ -103,18 +107,19 @@
                 <img src="assets/images/google.svg" alt="google logo">
               </a>
                         </nav> -->
-                        <p class="login-wrapper-footer-text">Have an account? <a href="login.html" class="text-reset">Login here</a></p>
+                        <p class="login-wrapper-footer-text">Have an account? <a href="login.html"
+                                class="text-reset">Login here</a></p>
                     </div>
                 </div>
-                 <div class="col-sm-6 col-md-6 intro-section">
+                <div class="col-sm-6 col-md-6 intro-section">
                     <!-- <div class="brand-wrapper">
                         <img src="assets/images/logo.png" alt="" class="logo">
                     </div> -->
                     <div class="intro-content-wrapper">
                         <!-- <center><h1 class="intro-title">Welcome to</h1></center> -->
                         <div class="logo-area">
-                        <center><a href="#"><img src="assets/images/logo.png" class="logo" alt="" /></a></center>
-                    </div>
+                            <center><a href="#"><img src="assets/images/logo.png" class="logo" alt="" /></a></center>
+                        </div>
                         <a href="dimensions/homepage.html" class="btn btn-read-more">Read more</a>
                     </div>
                     <!-- <div class="intro-section-footer">
@@ -127,18 +132,17 @@
                 </div>
             </div>
         </div>
-        
+
     </main>
     <script>
 
-        function checkvalue(val)
-{
-    console.log(val);
-    if(val=="six")
-       document.getElementById('other').style.display='block';
-    else
-       document.getElementById('other').style.display='none'; 
-}
+        function checkvalue(val) {
+            console.log(val);
+            if (val == "six")
+                document.getElementById('other').style.display = 'block';
+            else
+                document.getElementById('other').style.display = 'none';
+        }
 
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

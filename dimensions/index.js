@@ -7,18 +7,16 @@ const critMap = {
   'crit-6': criterionScore6,
 };
 
-function validateMooc(){
-var empt = document.forms["form1"]["mooc-name"].value;
-if (empt == "")
-{
-alert("Please input a MOOC name");
-return false;
-}
-else 
-{
-alert('Thanks, you can now proceed further');
-return true; 
-}
+function validateMooc() {
+  var empt = document.forms["form1"]["mooc-name"].value;
+  if (empt == "") {
+    alert("Please input a MOOC name");
+    return false;
+  }
+  else {
+    alert('Thanks, you can now proceed further');
+    return true;
+  }
 }
 
 function criterionScoreCalc(allInputs, resultId) {
@@ -89,16 +87,16 @@ function criteriaAverage() {
   const feedbackAvg = total / allCriteria.length;
   //console.log(feedbackAvg);
 
-  if(feedbackAvg <= 0.9){
-     document.getElementById("feedbackXt1").innerHTML = "Missing or Minimal: You have either missed the attempt to incorporate the learner-centric approach in the design of this dimension, or it is at a minimal level. You should reflect back on the pedagogy design for this dimension by going through individual indicators for different criteria.";
+  if (feedbackAvg <= 0.9) {
+    document.getElementById("feedbackXt1").innerHTML = "Missing or Minimal: You have either missed the attempt to incorporate the learner-centric approach in the design of this dimension, or it is at a minimal level. You should reflect back on the pedagogy design for this dimension by going through individual indicators for different criteria.";
   }
-  else if(feedbackAvg <= 1.5){
+  else if (feedbackAvg <= 1.5) {
     document.getElementById("feedbackXt1").innerHTML = "Inadequate to towards adequate: You are on the path to make an appreciable attempt to incorporate the learner-centric activities in the design of this dimension. Reflecting back on the individual indicators for different criteria of the dimension will help you in improving on the learner-centric pedagogy.";
   }
-  else if(feedbackAvg <= 2){
+  else if (feedbackAvg <= 2) {
     document.getElementById("feedbackXt1").innerHTML = "Adequate to Appreciable: You have made an appreciable attempt to incorporate several aspects of the learner-centric approach in the design of this dimension. To improve further, you may reflect back on the design of this dimension by reviewing individual indicators to identify the ones which can still be addressed.";
   }
-  else if(feedbackAvg <= 3){
+  else if (feedbackAvg <= 3) {
     document.getElementById("feedbackXt1").innerHTML = "Distinguished: You have made a distinguished attempt to incorporate the learner-centric activities in the design of this dimension. You have successfully implemented most of the listed criteria in your design. If desired, you may still review individual indicators in this dimension to map the ones which may have been missed, and reflect on incorporating those in your future attempt.";
   }
 }
@@ -111,7 +109,7 @@ function handleInputClick(value, scoreId, critId) {
   if (critFunction) critFunction();
 }
 
-function refreshRadioButtons(){
+function refreshRadioButtons() {
 
   // const allRadios = ["indi-1", "indi-2", "indi-3", "indi-21", "indi-22", "indi-31", "indi-32", "indi-33", "indi-41", "indi-42", "indi-43","indi-51", "indi-52", "indi-53", "indi-61", "indi-62", "indi-63"];
   // allRadios.forEach((id) => {
@@ -119,14 +117,14 @@ function refreshRadioButtons(){
   // console.log(id + "" + rd);
 
   // document.getElementById('d1i11q1').checked = false;
-   $("input[type=radio]:checked").each(function(){
-        $(this).attr('checked',false);
-    });
+  $("input[type=radio]:checked").each(function () {
+    $(this).attr('checked', false);
+  });
 
   // $('input[name=Choose]').attr('checked',false);
 
 }
 
-function allButtonsFeedback(){
-  
+function allButtonsFeedback() {
+
 }

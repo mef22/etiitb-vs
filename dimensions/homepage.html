@@ -91,6 +91,47 @@
     border-radius: 25px;
 }
 
+.blue-btn a{
+  color: white;
+  text-decoration:none;
+  text-align: center;
+  display:block; /* important */
+}
+
+.blue-btn, .first-link{
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;     
+}
+
+
+.blue-btn{
+  height: 111px;
+  font: normal normal 700 1em/4em Arial,sans-serif;
+  overflow: hidden;
+  width: 100%;
+  background-color: #85c4a4;
+  border-radius: 20px;
+}
+
+.blue-btn:hover{
+   background-color: #ffa26c;
+  
+}
+
+.blue-btn a:hover{
+  text-decoration: none;
+}
+
+.first-link{
+  margin-top: 0em;   
+}
+
+.blue-btn:hover .first-link{
+  margin-top: -4em;
+}
   </style>
     
     <!-- Start Header Top Area -->
@@ -118,8 +159,16 @@
 <!--                             <img src="img/logo/logo.png" class="rounded-circle img-fluid" alt=""/>
  -->                        </div>
                         <div class="col-md-12">
-                            <h4><center>MOOC Evaluation Framework (MEF)  <a href="dimension-one.html"><br>
-                        <input name="login" id="login" class="btn login-btn" type="button" value="Get Started with MEF">
+                            <h4><center>MOOC Evaluation Framework (MEF)  <a href="dimension-one.html"><br><br>
+                                <div class="blue-btn">
+  <a class="first-link" href="dimension-one.html">
+    Get Started
+  </a>
+  <a href="dimension-one.html">
+    with MEF Toolkit
+  </a>
+</div>
+                       <!--  <input name="login" id="login" class="btn login-btn" type="button" value="Get Started with MEF"> -->
                     </a>  </center></h4><br><br>
                                         <h4 class="subheading">What is MEF ? </h4>
 
@@ -224,11 +273,14 @@ foster learner motivation, learner agency and community building activities.</td
             </div>
         </div>
     </div> 
+ </div>
 
-                   
-                </div>
+
+
+</body>
 
     
+
        
 
 
