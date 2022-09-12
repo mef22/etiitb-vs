@@ -54,6 +54,41 @@ function criterionScore7() {
   criterionScoreCalc(["indi-71"], "crit-7");
 }
 
+function refreshRadioButtons() {
+
+  Array.from( document.querySelectorAll('input[type=radio]:checked'), input => input.checked = false ); //refresh is working, but gotta make the old values go away too.
+
+  document.getElementById("indi-1").innerText="";
+  document.getElementById("crit-1").innerText="";  
+
+  document.getElementById("indi-21").innerText="";
+  document.getElementById("indi-22").innerText=""; 
+  document.getElementById("crit-2").innerText="";  
+
+  document.getElementById("indi-31").innerText="";
+  document.getElementById("crit-3").innerText="";  
+
+  document.getElementById("indi-41").innerText="";
+  document.getElementById("indi-42").innerText=""; 
+  document.getElementById("indi-43").innerText=""; 
+  document.getElementById("indi-44").innerText=""; 
+  document.getElementById("indi-45").innerText=""; 
+  document.getElementById("crit-4").innerText="";  
+
+  document.getElementById("indi-51").innerText="";
+  document.getElementById("indi-52").innerText=""; 
+  document.getElementById("crit-5").innerText="";  
+
+  document.getElementById("indi-61").innerText="";
+  document.getElementById("crit-6").innerText="";  
+
+  document.getElementById("indi-71").innerText="";
+  document.getElementById("crit-7").innerText="";
+
+  document.getElementById("critavg").innerText="";
+  // document.getElementsByTagName("td")[0, 1].innerText ="";
+}
+
 
 // Criteria Average
 function criteriaAverage() {

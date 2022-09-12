@@ -87,6 +87,11 @@ function criteriaAverage() {
   const feedbackAvg = total / allCriteria.length;
   //console.log(feedbackAvg);
 
+  // Array.from(document.querySelectorAll("input[type=checkbox][name=type]:checked"), e => e.value);
+//   $("input[type=radio]:checked").each(function(){
+//     console.log("all are checked");
+// });
+
   if (feedbackAvg <= 0.9) {
     document.getElementById("feedbackXt1").innerHTML = "Missing or Minimal: You have either missed the attempt to incorporate the learner-centric approach in the design of this dimension, or it is at a minimal level. You should reflect back on the pedagogy design for this dimension by going through individual indicators for different criteria.";
   }
@@ -111,20 +116,42 @@ function handleInputClick(value, scoreId, critId) {
 
 function refreshRadioButtons() {
 
-  // const allRadios = ["indi-1", "indi-2", "indi-3", "indi-21", "indi-22", "indi-31", "indi-32", "indi-33", "indi-41", "indi-42", "indi-43","indi-51", "indi-52", "indi-53", "indi-61", "indi-62", "indi-63"];
-  // allRadios.forEach((id) => {
-  // const rd = document.getElementById(id);
-  // console.log(id + "" + rd);
+  Array.from( document.querySelectorAll('input[type=radio]:checked'), input => input.checked = false ); //refresh is working, but gotta make the old values go away too.
 
-  // document.getElementById('d1i11q1').checked = false;
-  $("input[type=radio]:checked").each(function () {
-    $(this).attr('checked', false);
-  });
+  document.getElementById("indi-1").innerText="";
+  document.getElementById("indi-2").innerText=""; 
+  document.getElementById("indi-3").innerText=""; 
+  document.getElementById("crit-1").innerText="";  
 
-  // $('input[name=Choose]').attr('checked',false);
+  document.getElementById("indi-21").innerText="";
+  document.getElementById("indi-22").innerText=""; 
+  document.getElementById("crit-2").innerText="";  
 
+  document.getElementById("indi-31").innerText="";
+  document.getElementById("indi-32").innerText=""; 
+  document.getElementById("indi-33").innerText=""; 
+  document.getElementById("crit-3").innerText="";  
+
+  document.getElementById("indi-41").innerText="";
+  document.getElementById("indi-42").innerText=""; 
+  document.getElementById("indi-43").innerText=""; 
+  document.getElementById("crit-4").innerText="";  
+
+  document.getElementById("indi-51").innerText="";
+  document.getElementById("indi-52").innerText=""; 
+  document.getElementById("indi-53").innerText=""; 
+  document.getElementById("crit-5").innerText="";  
+
+  document.getElementById("indi-61").innerText="";
+  document.getElementById("indi-62").innerText=""; 
+  document.getElementById("indi-63").innerText=""; 
+  document.getElementById("crit-6").innerText="";  
+
+  document.getElementById("critavg").innerText="";
+  // document.getElementsByTagName("td")[0, 1].innerText ="";
 }
 
 function allButtonsFeedback() {
 
 }
+

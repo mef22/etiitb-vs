@@ -25,6 +25,7 @@ function criterionScoreCalc(allInputs, resultId) {
   criteriaAverage();
 }
 
+
 function criterionScore1() {
   criterionScoreCalc(["indi-1", "indi-2"], "crit-1");
 }
@@ -47,6 +48,35 @@ function criterionScore5() {
 
 function criterionScore6() {
   criterionScoreCalc(["indi-61"], "crit-6");
+}
+
+function refreshRadioButtons() {
+
+  Array.from( document.querySelectorAll('input[type=radio]:checked'), input => input.checked = false ); //refresh is working, but gotta make the old values go away too.
+
+  document.getElementById("indi-1").innerText="";
+  document.getElementById("indi-2").innerText="";
+  document.getElementById("crit-1").innerText="";  
+
+  document.getElementById("indi-21").innerText="";
+  document.getElementById("indi-22").innerText=""; 
+  document.getElementById("crit-2").innerText="";  
+
+  document.getElementById("indi-31").innerText="";
+  document.getElementById("indi-32").innerText="";
+  document.getElementById("crit-3").innerText="";  
+
+  document.getElementById("indi-41").innerText="";
+  document.getElementById("crit-4").innerText="";  
+
+  document.getElementById("indi-51").innerText="";
+  document.getElementById("crit-5").innerText="";  
+
+  document.getElementById("indi-61").innerText="";
+  document.getElementById("crit-6").innerText="";  
+
+  document.getElementById("critavg").innerText="";
+  // document.getElementsByTagName("td")[0, 1].innerText ="";
 }
 
 
