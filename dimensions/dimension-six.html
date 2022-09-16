@@ -178,9 +178,10 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="normal-table-list">
             <div class="float-left" style="margin-bottom: 5px;">
-              <input type="text" name="mooc-name" placeholder="*Enter MOOC Name">
-              <button onclick="" style="background-color: #ffe7d9; border-color: #ffe7d9;">Start</i>
-              </button>
+              <form name="form1" action="#">
+                <input type="text" name="mooc-name" id = "mooc-id" placeholder="*Enter MOOC Name" style="outline-color: #ffe7d9; border-color: #ffe7d9;">
+                <button onclick="validateMooc(event)" style="background-color: #ffe7d9; border-color: #ffe7d9;">Start</i>
+                </button></form>
             </div>
             <div class="float-right" style="margin-bottom: 5px;">
               <button onclick="refreshRadioButtons()" style="background-color: #ffe7d9; border-color: #ffe7d9;"><i class="fa fa-refresh"
@@ -240,19 +241,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i11q1" name="d1i11q1" value="0"
-                        onclick="handleInputClick(this.value, 'indi-1', 'crit-1')" />
+                        onclick="handleInputClick(event, this.value, 'indi-1', 'crit-1')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i11q1" name="d1i11q1" value="1"
-                        onclick="handleInputClick(this.value, 'indi-1', 'crit-1')" />
+                        onclick="handleInputClick(event, this.value, 'indi-1', 'crit-1')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i11q1" name="d1i11q1" value="2"
-                        onclick="handleInputClick(this.value, 'indi-1', 'crit-1')" />
+                        onclick="handleInputClick(event, this.value, 'indi-1', 'crit-1')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i11q1" name="d1i11q1" value="3"
-                        onclick="handleInputClick(this.value, 'indi-1', 'crit-1')" />
+                        onclick="handleInputClick(event, this.value, 'indi-1', 'crit-1')" />
                     </td>
                     <td id="indi-1"></td>
                     <td id="crit-1" style="border-bottom-style: hidden;"></td>
@@ -292,19 +293,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i61q1" name="d1i61q1" value="0"
-                        onclick="handleInputClick(this.value, 'indi-21', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-21', 'crit-2')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i61q1" name="d1i61q1" value="1"
-                        onclick="handleInputClick(this.value, 'indi-21', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-21', 'crit-2')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i61q1" name="d1i61q1" value="2"
-                        onclick="handleInputClick(this.value, 'indi-21', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-21', 'crit-2')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i61q1" name="d1i61q1" value="3"
-                        onclick="handleInputClick(this.value, 'indi-21', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-21', 'crit-2')" />
                     </td>
                     <td id="indi-21"></td>
                     <td style="border-bottom-style: hidden;"></td>
@@ -315,19 +316,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i61q2" name="d1i61q2" value="0"
-                        onclick="handleInputClick(this.value, 'indi-22', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-22', 'crit-2')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i61q2" name="d1i61q2" value="1"
-                        onclick="handleInputClick(this.value, 'indi-22', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-22', 'crit-2')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i61q2" name="d1i61q2" value="2"
-                        onclick="handleInputClick(this.value, 'indi-22', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-22', 'crit-2')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i61q2" name="d1i61q2" value="3"
-                        onclick="handleInputClick(this.value, 'indi-22', 'crit-2')" />
+                        onclick="handleInputClick(event, this.value, 'indi-22', 'crit-2')" />
                     </td>
                     <td id="indi-22"></td>
                     <td id="crit-2" style="border-bottom-style: hidden;"></td>
@@ -365,19 +366,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i31q1" name="d1i31q1" value="0"
-                        onclick="handleInputClick(this.value, 'indi-31', 'crit-3')" />
+                        onclick="handleInputClick(event, this.value, 'indi-31', 'crit-3')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i31q1" name="d1i31q1" value="1"
-                        onclick="handleInputClick(this.value, 'indi-31', 'crit-3')" />
+                        onclick="handleInputClick(event, this.value, 'indi-31', 'crit-3')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i31q1" name="d1i31q1" value="2"
-                        onclick="handleInputClick(this.value, 'indi-31', 'crit-3')" />
+                        onclick="handleInputClick(event, this.value, 'indi-31', 'crit-3')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i31q1" name="d1i31q1" value="3"
-                        onclick="handleInputClick(this.value, 'indi-31', 'crit-3')" />
+                        onclick="handleInputClick(event, this.value, 'indi-31', 'crit-3')" />
                     </td>
                     <td id="indi-31"></td>
                     <td id="crit-3" style="border-bottom-style: hidden;"></td>
@@ -413,19 +414,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="0"
-                        onclick="handleInputClick(this.value, 'indi-41', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-41', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="1"
-                        onclick="handleInputClick(this.value, 'indi-41', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-41', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="2"
-                        onclick="handleInputClick(this.value, 'indi-41', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-41', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="3"
-                        onclick="handleInputClick(this.value, 'indi-41', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-41', 'crit-4')" />
                     </td>
                     <td id="indi-41"></td>
                     <td id="crit-4" style="border-bottom-style: hidden;"></td>
@@ -436,19 +437,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="0"
-                        onclick="handleInputClick(this.value, 'indi-42', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-42', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="1"
-                        onclick="handleInputClick(this.value, 'indi-42', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-42', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="2"
-                        onclick="handleInputClick(this.value, 'indi-42', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-42', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="3"
-                        onclick="handleInputClick(this.value, 'indi-42', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-42', 'crit-4')" />
                     </td>
                     <td id="indi-42"></td>
                     <td style="border-bottom-style: hidden;"></td>
@@ -460,19 +461,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q3" name="d1i51q3" value="0"
-                        onclick="handleInputClick(this.value, 'indi-43', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-43', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q3" name="d1i51q3" value="1"
-                        onclick="handleInputClick(this.value, 'indi-43', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-43', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q3" name="d1i51q3" value="2"
-                        onclick="handleInputClick(this.value, 'indi-43', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-43', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q3" name="d1i51q3" value="3"
-                        onclick="handleInputClick(this.value, 'indi-43', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-43', 'crit-4')" />
                     </td>
                     <td id="indi-43"></td>
                     <td style="border-bottom-style: hidden;"></td>
@@ -484,19 +485,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q4" name="d1i51q4" value="0"
-                        onclick="handleInputClick(this.value, 'indi-44', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-44', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q4" name="d1i51q4" value="1"
-                        onclick="handleInputClick(this.value, 'indi-44', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-44', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q4" name="d1i51q4" value="2"
-                        onclick="handleInputClick(this.value, 'indi-44', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-44', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q4" name="d1i51q4" value="3"
-                        onclick="handleInputClick(this.value, 'indi-44', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-44', 'crit-4')" />
                     </td>
                     <td id="indi-44"></td>
                     <td style="border-bottom-style: hidden;"></td>
@@ -507,19 +508,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q5" name="d1i51q5" value="0"
-                        onclick="handleInputClick(this.value, 'indi-45', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-45', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q5" name="d1i51q5" value="1"
-                        onclick="handleInputClick(this.value, 'indi-45', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-45', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q5" name="d1i51q5" value="2"
-                        onclick="handleInputClick(this.value, 'indi-45', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-45', 'crit-4')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q5" name="d1i51q5" value="3"
-                        onclick="handleInputClick(this.value, 'indi-45', 'crit-4')" />
+                        onclick="handleInputClick(event, this.value, 'indi-45', 'crit-4')" />
                     </td>
                     <td id="indi-45"></td>
                     <td style="border-bottom-style: hidden;"></td>
@@ -549,19 +550,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="0"
-                        onclick="handleInputClick(this.value, 'indi-51', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-51', 'crit-5')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="1"
-                        onclick="handleInputClick(this.value, 'indi-51', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-51', 'crit-5')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="2"
-                        onclick="handleInputClick(this.value, 'indi-51', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-51', 'crit-5')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1" name="d1i51q1" value="3"
-                        onclick="handleInputClick(this.value, 'indi-51', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-51', 'crit-5')" />
                     </td>
                     <td id="indi-51"></td>
                     <td style="border-bottom-style: hidden;"></td>
@@ -574,19 +575,19 @@
                       -address some misconceptions associated with certain incorrect responses</td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="0"
-                        onclick="handleInputClick(this.value, 'indi-52', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-52', 'crit-5')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="1"
-                        onclick="handleInputClick(this.value, 'indi-52', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-52', 'crit-5')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="2"
-                        onclick="handleInputClick(this.value, 'indi-52', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-52', 'crit-5')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q2" name="d1i51q2" value="3"
-                        onclick="handleInputClick(this.value, 'indi-52', 'crit-5')" />
+                        onclick="handleInputClick(event, this.value, 'indi-52', 'crit-5')" />
                     </td>
                     <td id="indi-52"></td>
                     <td id="crit-5" style="border-bottom-style: hidden;"></td>
@@ -618,19 +619,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1x" name="d1i51q1x" value="0"
-                        onclick="handleInputClick(this.value, 'indi-61', 'crit-6')" />
+                        onclick="handleInputClick(event, this.value, 'indi-61', 'crit-6')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1x" name="d1i51q1x" value="1"
-                        onclick="handleInputClick(this.value, 'indi-61', 'crit-6')" />
+                        onclick="handleInputClick(event, this.value, 'indi-61', 'crit-6')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1x" name="d1i51q1x" value="2"
-                        onclick="handleInputClick(this.value, 'indi-61', 'crit-6')" />
+                        onclick="handleInputClick(event, this.value, 'indi-61', 'crit-6')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1x" name="d1i51q1x" value="3"
-                        onclick="handleInputClick(this.value, 'indi-61', 'crit-6')" />
+                        onclick="handleInputClick(event, this.value, 'indi-61', 'crit-6')" />
                     </td>
                     <td id="indi-61"></td>
                     <td id="crit-6" style="border-bottom-style: hidden;"></td>
@@ -670,19 +671,19 @@
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1y" name="d1i51q1y" value="0"
-                        onclick="handleInputClick(this.value, 'indi-71', 'crit-7')" />
+                        onclick="handleInputClick(event, this.value, 'indi-71', 'crit-7')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1y" name="d1i51q1y" value="1"
-                        onclick="handleInputClick(this.value, 'indi-71', 'crit-7')" />
+                        onclick="handleInputClick(event, this.value, 'indi-71', 'crit-7')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1y" name="d1i51q1y" value="2"
-                        onclick="handleInputClick(this.value, 'indi-71', 'crit-7')" />
+                        onclick="handleInputClick(event, this.value, 'indi-71', 'crit-7')" />
                     </td>
                     <td>
                       <input type="radio" id="d1i51q1y" name="d1i51q1y" value="3"
-                        onclick="handleInputClick(this.value, 'indi-71', 'crit-7')" />
+                        onclick="handleInputClick(event, this.value, 'indi-71', 'crit-7')" />
                     </td>
                     <td id="indi-71"></td>
                     <td id="crit-7" style="border-bottom-style: hidden;"></td>

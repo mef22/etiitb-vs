@@ -1,11 +1,38 @@
 const critMap = {
   "crit-1": criterionScore1,
   "crit-2": criterionScore2,
-  'crit-3': criterionScore3,
-  'crit-4': criterionScore4,
-  'crit-5': criterionScore5,
-  'crit-6': criterionScore6,
+  "crit-3": criterionScore3,
+  "crit-4": criterionScore4,
+  "crit-5": criterionScore5,
+  "crit-6": criterionScore6,
 };
+
+const critIndividualsMap = {
+  "crit-1": ["indi-1", "indi-2", "indi-3"],
+  "crit-2": ["indi-21"],
+  "crit-3": ["indi-31"],
+  "crit-4": ["indi-41", "indi-42"],
+  "crit-5": ["indi-51", "indi-52"],
+  "crit-6": ["indi-61", "indi-62", "indi-63"],
+};
+
+var moocName = "";
+
+function validateMooc(event) {
+  event.preventDefault();
+  var empt = document.forms["form1"]["mooc-name"].value;
+  if (empt == "") {
+    // alert("Please input a MOOC name");
+    // return false;
+    moocName = "";
+  } else {
+    // alert('Thanks, you can now proceed further');
+    // return true;
+    moocName = empt;
+    document.getElementById("mooc-id").style.borderColor = "#ffe7d9";
+    //document.getElementById('container').scrollTop = 20;
+  }
+}
 
 function criterionScoreCalc(allInputs, resultId) {
   var total = 0;
@@ -26,29 +53,28 @@ function criterionScoreCalc(allInputs, resultId) {
 }
 
 function criterionScore1() {
-  criterionScoreCalc(["indi-1", "indi-2", "indi-3"], "crit-1");
+  criterionScoreCalc(critIndividualsMap["crit-1"], "crit-1");
 }
 
 function criterionScore2() {
-  criterionScoreCalc(["indi-21"], "crit-2");
+  criterionScoreCalc(critIndividualsMap["crit-2"], "crit-2");
 }
 
 function criterionScore3() {
-  criterionScoreCalc(["indi-31"], "crit-3");
+  criterionScoreCalc(critIndividualsMap["crit-3"], "crit-3");
 }
 
 function criterionScore4() {
-  criterionScoreCalc(["indi-41", "indi-42"], "crit-4");
+  criterionScoreCalc(critIndividualsMap["crit-4"], "crit-4");
 }
 
 function criterionScore5() {
-  criterionScoreCalc(["indi-51", "indi-52"], "crit-5");
+  criterionScoreCalc(critIndividualsMap["crit-5"], "crit-5");
 }
 
 function criterionScore6() {
-  criterionScoreCalc(["indi-61", "indi-62", "indi-63"], "crit-6");
+  criterionScoreCalc(critIndividualsMap["crit-6"], "crit-6");
 }
-
 
 // Criteria Average
 function criteriaAverage() {
@@ -70,23 +96,54 @@ function criteriaAverage() {
 
   //console.log(total / allCriteria.length);
   const feedbackAvg = total / allCriteria.length;
-  console.log(feedbackAvg);
 
-  if (feedbackAvg <= 0.9) {
-    document.getElementById("feedbackXt1").innerHTML = "Missing or Minimal: You have either missed the attempt to incorporate the learner-centric approach in the design of this dimension, or it is at a minimal level. You should reflect back on the pedagogy design for this dimension by going through individual indicators for different criteria.";
-  }
-  else if (feedbackAvg <= 1.5) {
-    document.getElementById("feedbackXt1").innerHTML = "Inadequate to towards adequate: You are on the path to make an appreciable attempt to incorporate the learner-centric activities in the design of this dimension. Reflecting back on the individual indicators for different criteria of the dimension will help you in improving on the learner-centric pedagogy.";
-  }
-  else if (feedbackAvg <= 2) {
-    document.getElementById("feedbackXt1").innerHTML = "Adequate to Appreciable: You have made an appreciable attempt to incorporate several aspects of the learner-centric approach in the design of this dimension. To improve further, you may reflect back on the design of this dimension by reviewing individual indicators to identify the ones which can still be addressed.";
-  }
-  else if (feedbackAvg <= 3) {
-    document.getElementById("feedbackXt1").innerHTML = "Distinguished: You have made a distinguished attempt to incorporate the learner-centric activities in the design of this dimension. You have successfully implemented most of the listed criteria in your design. If desired, you may still review individual indicators in this dimension to map the ones which may have been missed, and reflect on incorporating those in your future attempt.";
+  let currentChecked = 0;
+  let checkedTotal = 0;
+
+  Object.keys(critIndividualsMap).forEach((critKey) => {
+    const items = critIndividualsMap[critKey];
+
+    checkedTotal += items.length;
+
+    items.forEach((item) => {
+      const elText = document.getElementById(item)?.innerText;
+
+      if (elText !== "") {
+        currentChecked += 1;
+      }
+    });
+  });
+
+  if (checkedTotal === currentChecked) {
+    if (feedbackAvg <= 0.9) {
+      document.getElementById("feedbackXt1").innerHTML =
+        "Missing or Minimal: You have either missed the attempt to incorporate the learner-centric approach in the design of this dimension, or it is at a minimal level. You should reflect back on the pedagogy design for this dimension by going through individual indicators for different criteria.";
+    } else if (feedbackAvg <= 1.5) {
+      document.getElementById("feedbackXt1").innerHTML =
+        "Inadequate to towards adequate: You are on the path to make an appreciable attempt to incorporate the learner-centric activities in the design of this dimension. Reflecting back on the individual indicators for different criteria of the dimension will help you in improving on the learner-centric pedagogy.";
+    } else if (feedbackAvg <= 2) {
+      document.getElementById("feedbackXt1").innerHTML =
+        "Adequate to Appreciable: You have made an appreciable attempt to incorporate several aspects of the learner-centric approach in the design of this dimension. To improve further, you may reflect back on the design of this dimension by reviewing individual indicators to identify the ones which can still be addressed.";
+    } else if (feedbackAvg <= 3) {
+      document.getElementById("feedbackXt1").innerHTML =
+        "Distinguished: You have made a distinguished attempt to incorporate the learner-centric activities in the design of this dimension. You have successfully implemented most of the listed criteria in your design. If desired, you may still review individual indicators in this dimension to map the ones which may have been missed, and reflect on incorporating those in your future attempt.";
+    }
+  } else {
+    document.getElementById("feedbackXt1").innerHTML = "";
   }
 }
 
-function handleInputClick(value, scoreId, critId) {
+function handleInputClick(event, value, scoreId, critId) {
+  if (moocName == "") {
+    event?.preventDefault && event.preventDefault();
+    event?.stopPropogation && event.stopPropogation();
+
+    alert("Please enter the MOOC name on the top and press Start");
+    document.documentElement.scrollTop = 0;
+    document.getElementById("mooc-id").style.borderColor = "red";
+    return;
+  }
+
   document.getElementById(scoreId).innerText = value;
 
   const critFunction = critMap[critId];
@@ -95,33 +152,38 @@ function handleInputClick(value, scoreId, critId) {
 }
 
 function refreshRadioButtons() {
+  Array.from(
+    document.querySelectorAll("input[type=radio]:checked"),
+    (input) => (input.checked = false)
+  ); //refresh is working, but gotta make the old values go away too.
 
-  Array.from( document.querySelectorAll('input[type=radio]:checked'), input => input.checked = false ); //refresh is working, but gotta make the old values go away too.
+  document.getElementById("indi-1").innerText = "";
+  document.getElementById("indi-2").innerText = "";
+  document.getElementById("indi-3").innerText = "";
+  document.getElementById("crit-1").innerText = "";
 
-  document.getElementById("indi-1").innerText="";
-  document.getElementById("indi-2").innerText=""; 
-  document.getElementById("indi-3").innerText=""; 
-  document.getElementById("crit-1").innerText="";  
+  document.getElementById("indi-21").innerText = "";
+  document.getElementById("crit-2").innerText = "";
 
-  document.getElementById("indi-21").innerText="";
-  document.getElementById("crit-2").innerText="";  
+  document.getElementById("indi-31").innerText = "";
+  document.getElementById("crit-3").innerText = "";
 
-  document.getElementById("indi-31").innerText="";
-  document.getElementById("crit-3").innerText="";  
+  document.getElementById("indi-41").innerText = "";
+  document.getElementById("indi-42").innerText = "";
+  document.getElementById("crit-4").innerText = "";
 
-  document.getElementById("indi-41").innerText="";
-  document.getElementById("indi-42").innerText=""; 
-  document.getElementById("crit-4").innerText="";  
+  document.getElementById("indi-51").innerText = "";
+  document.getElementById("indi-52").innerText = "";
+  document.getElementById("crit-5").innerText = "";
 
-  document.getElementById("indi-51").innerText="";
-  document.getElementById("indi-52").innerText=""; 
-  document.getElementById("crit-5").innerText="";  
+  document.getElementById("indi-61").innerText = "";
+  document.getElementById("indi-62").innerText = "";
+  document.getElementById("indi-63").innerText = "";
+  document.getElementById("crit-6").innerText = "";
 
-  document.getElementById("indi-61").innerText="";
-  document.getElementById("indi-62").innerText=""; 
-  document.getElementById("indi-63").innerText=""; 
-  document.getElementById("crit-6").innerText="";  
+  document.getElementById("critavg").innerText = "";
 
-  document.getElementById("critavg").innerText="";
-  // document.getElementsByTagName("td")[0, 1].innerText ="";
+  moocName = "";
+  document.getElementById("mooc-id").value = "";
+  document.getElementById("feedbackXt1").innerText = "";
 }

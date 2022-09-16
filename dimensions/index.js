@@ -29,6 +29,8 @@ function validateMooc(event) {
     // alert('Thanks, you can now proceed further');
     // return true;
     moocName = empt;
+    document.getElementById("mooc-id").style.borderColor = "#b5e8b7";
+    //document.getElementById('container').scrollTop = 20;
   }
 }
 
@@ -144,8 +146,9 @@ function handleInputClick(event, value, scoreId, critId) {
     event?.preventDefault && event.preventDefault();
     event?.stopPropogation && event.stopPropogation();
 
-    alert("Please input a MOOC name");
-
+    alert("Please enter the MOOC name on the top and press Start");
+    document.documentElement.scrollTop = 0;
+    document.getElementById("mooc-id").style.borderColor = "red";
     return;
   }
 
@@ -193,6 +196,6 @@ function refreshRadioButtons() {
 
   document.getElementById("critavg").innerText = "";
   // document.getElementsByTagName("td")[0, 1].innerText ="";
+  moocName = "";
+  document.getElementById("mooc-id").value = "";
 }
-
-function allButtonsFeedback() {}
