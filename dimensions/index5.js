@@ -18,6 +18,14 @@ const critIndividualsMap = {
 
 var moocName = "";
 
+$ = function (id) {
+  return document.getElementById(id);
+};
+
+var hide = function (id) {
+  $(id).style.display = "none";
+};
+
 function validateMooc(event) {
   event.preventDefault();
   var empt = document.forms["form1"]["mooc-name"].value;
@@ -171,7 +179,7 @@ function handleInputClick(event, value, scoreId, critId) {
     event?.preventDefault && event.preventDefault();
     event?.stopPropogation && event.stopPropogation();
 
-    alert("Please enter the MOOC name on the top and press Start");
+    document.getElementById("popup2").style.display = "block";
     document.documentElement.scrollTop = 0;
     document.getElementById("mooc-id").style.borderColor = "red";
     return;
