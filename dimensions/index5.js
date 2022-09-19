@@ -26,6 +26,10 @@ var hide = function (id) {
   $(id).style.display = "none";
 };
 
+function editMoocName(){
+   document.getElementById("mooc-id").removeAttribute("disabled");
+}
+
 function validateMooc(event) {
   event.preventDefault();
   var empt = document.forms["form1"]["mooc-name"].value;
@@ -38,6 +42,7 @@ function validateMooc(event) {
     // return true;
     moocName = empt;
     document.getElementById("mooc-id").style.borderColor = "#ffe7d9";
+    document.getElementById("mooc-id").setAttribute("disabled", "disabled");
     //document.getElementById('container').scrollTop = 20;
   }
 }
@@ -113,7 +118,7 @@ function refreshRadioButtons() {
 
   document.getElementById("critavg").innerText = "";
   moocName = "";
-  document.getElementById("mooc-id").value = "";
+  //document.getElementById("mooc-id").value = "";
   document.getElementById("feedbackXt1").innerText = "";
 }
 
@@ -159,15 +164,24 @@ function criteriaAverage() {
     if (feedbackAvg <= 0.9) {
       document.getElementById("feedbackXt1").innerHTML =
         "Missing or Minimal: You have either missed the attempt to incorporate the learner-centric approach in the design of this dimension, or it is at a minimal level. You should reflect back on the pedagogy design for this dimension by going through individual indicators for different criteria.";
-    } else if (feedbackAvg <= 1.5) {
+    } else if (feedbackAvg <= 1.4) {
       document.getElementById("feedbackXt1").innerHTML =
-        "Inadequate to towards adequate: You are on the path to make an appreciable attempt to incorporate the learner-centric activities in the design of this dimension. Reflecting back on the individual indicators for different criteria of the dimension will help you in improving on the learner-centric pedagogy.";
-    } else if (feedbackAvg <= 2) {
+        "Inadequate: You have made an attempt to incorporate the learner-centric activities in the design of this dimension. However, it seems inadequate. Reflecting back on the individual indicators for different criteria of the dimension will help you in improving on the learner-centric pedagogy.";
+    } else if (feedbackAvg <= 1.9) {
       document.getElementById("feedbackXt1").innerHTML =
-        "Adequate to Appreciable: You have made an appreciable attempt to incorporate several aspects of the learner-centric approach in the design of this dimension. To improve further, you may reflect back on the design of this dimension by reviewing individual indicators to identify the ones which can still be addressed.";
-    } else if (feedbackAvg <= 3) {
+        "Towards adequate: You are on the path to make an adequate attempt to incorporate the learner-centric activities in the design of this dimension. Reflecting back on the individual indicators for different criteria of the dimension will help you in improving the pedagogy design.";
+    }
+     else if (feedbackAvg <= 2.4) {
       document.getElementById("feedbackXt1").innerHTML =
-        "Distinguished: You have made a distinguished attempt to incorporate the learner-centric activities in the design of this dimension. You have successfully implemented most of the listed criteria in your design. If desired, you may still review individual indicators in this dimension to map the ones which may have been missed, and reflect on incorporating those in your future attempt.";
+        "Adequate: You have made an adequate attempt to incorporate several aspects of the learner-centric approach in the design of this dimension. To improve further, you may reflect back on the design of this dimension by reviewing individual indicators to identify the ones which can still be addressed.";
+    } 
+    else if (feedbackAvg <= 2.9) {
+      document.getElementById("feedbackXt1").innerHTML =
+        "Towards proficient: You have made a near proficient attempt to incorporate most aspects of the learner-centric approach in the design of this dimension. To improve further, you may still review individual indicators in this dimension to map the ones which may have been missed, and reflect on incorporating those in your future attempt.";
+    }
+     else if (feedbackAvg <= 3) {
+      document.getElementById("feedbackXt1").innerHTML =
+        "Proficient: You have made a proficient attempt to incorporate the learner-centric activities in the design of this dimension. You have successfully implemented all the listed criteria in your design.";
     }
   } else {
     document.getElementById("feedbackXt1").innerHTML = "";
