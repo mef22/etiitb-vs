@@ -148,7 +148,7 @@ function criteriaAverage() {
     } 
     else if (feedbackAvg <= 2.9) {
       document.getElementById("feedbackXt1").innerHTML =
-        "Towards proficient: You have made a near proficient attempt to incorporate most aspects of the learner-centric approach in the design of this dimension. To improve further, you may still review individual indicators in this dimension to map the ones which may have been missed, and reflect on incorporating those in your future attempt.";
+        "Towards proficient: You have made a near proficient attempt to incorporate most aspects of the learner-centric approach in the design of this dimension. To improve further, you may still review individual indicators in this dimension to map the ones which have been missed, and reflect on incorporating those in your future attempt.";
     }
      else if (feedbackAvg <= 3) {
       document.getElementById("feedbackXt1").innerHTML =
