@@ -5,6 +5,7 @@ const critMap = {
   "crit-4": criterionScore4,
   "crit-5": criterionScore5,
   "crit-6": criterionScore6,
+  "crit-7": criterionScore7,
 };
 
 const critIndividualsMap = {
@@ -14,6 +15,7 @@ const critIndividualsMap = {
   "crit-4": ["indi-41", "indi-42"],
   "crit-5": ["indi-51", "indi-52"],
   "crit-6": ["indi-61", "indi-62", "indi-63"],
+  "crit-7": ["indi-71", "indi-72"],
 };
 
 var moocName = "";
@@ -87,6 +89,10 @@ function criterionScore5() {
 
 function criterionScore6() {
   criterionScoreCalc(critIndividualsMap["crit-6"], "crit-6");
+}
+
+function criterionScore7() {
+  criterionScoreCalc(critIndividualsMap["crit-7"], "crit-7");
 }
 
 // Criteria Average
@@ -199,6 +205,10 @@ function refreshRadioButtons() {
   document.getElementById("indi-62").innerText = "";
   document.getElementById("indi-63").innerText = "";
   document.getElementById("crit-6").innerText = "";
+
+  document.getElementById("indi-71").innerText = "";
+  document.getElementById("indi-72").innerText = "";
+  document.getElementById("crit-7").innerText = "";
 
   document.getElementById("critavg").innerText = "";
 
